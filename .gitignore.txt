@@ -1,0 +1,6 @@
+# Fichiers générés par les scripts
+rapport.csv
+rapport.json
+
+# Cache Python
+__pycache__/
