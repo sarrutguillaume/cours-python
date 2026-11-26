@@ -34,7 +34,11 @@ rapport = rapport_client(commandes_valides)
 TOTAL = somme_commande(commandes_valides)           
 with open("rapport.csv", "w", encoding='utf-8', newline="") as rpt :
     writer = csv.writer( rpt, delimiter = ',')
+<<<<<<< HEAD
     writer.writerow(["Client", "Total"])
+=======
+    writer.writerow(["client", "montant_total"])
+>>>>>>> entete-b
     for nom, total in rapport.items() :
         writer.writerow([nom, total])
     writer.writerow(["TOTAL", TOTAL] )
