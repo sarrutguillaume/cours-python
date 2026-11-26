@@ -34,7 +34,7 @@ rapport = rapport_client(commandes_valides)
 TOTAL = somme_commande(commandes_valides)           
 with open("rapport.csv", "w", encoding='utf-8', newline="") as rpt :
     writer = csv.writer( rpt, delimiter = ',')
-    writer.writerow(["client", "total"])
+    writer.writerow(["Client", "Total"])
     for nom, total in rapport.items() :
         writer.writerow([nom, total])
     writer.writerow(["TOTAL", TOTAL] )
